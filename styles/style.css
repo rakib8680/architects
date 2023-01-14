@@ -39,14 +39,14 @@
 
 /* -------------------------------------------------Banner styles------------------------------------------*/
 
-.banner{
+.banner {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.banner-info{
+.banner-info {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -67,16 +67,82 @@
     margin-bottom: 30px;
 }
 
-.banner-button {
+.orange-button {
     font-weight: 600;
     font-size: 20px;
     color: white;
     background: #FF900E;
     border: 0;
     border-radius: 8px;
-    padding: 20px 25px;
+    padding: 18px 25px;
     margin-bottom: 50px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
+
+.banner-image {
+    padding-bottom: 40px;
+}
+.banner-image img{
+    border: 0;
+    border-radius: 15px;
+}
+
+
+
+/*---------------------------------------------------------------- Blog 1 styles --------------------------------------------- */
+
+.blog-container {
+    display: flex;
+    gap: 80px;
+    justify-content: center;
+    align-items: center;
+    padding: 0 300px;
+    margin-top: 90px;
+}
+
+.blog-images {
+    display: grid;
+    gap: 25px;
+    grid-template-columns: repeat(2, 1fr);
+    
+
+}
+.blog-images img{
+    border: 0;
+    border-radius: 11px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.blog-title {
+    font-weight: 700;
+    font-size: 45px;
+    margin-bottom: 25px;
+}
+
+.gray-text {
+    color: #727272;
+    font-weight: 500;
+}
+
+.orange-text {
+    color: #FF900E;
+}
+
+
+.blog-description {
+    font-weight: 400;
+    font-size: 16px;
+    color: #727272;
+    line-height: 200%;
+    margin-bottom: 25px;
+
+}
+
+
+
+
+
+
 
 
 
@@ -129,16 +195,12 @@
 
 /*                 mobile device                */
 
-@media screen  and (max-width:688px) {
-    
-    . {
-        display: none;
-
-    }
+@media screen and (max-width:688px) {
 
 
-        /* header style  */
-    .header-top{
+
+    /* header style  */
+    .header-top {
         padding: 30px 0 10px 20px;
         margin-bottom: 10px;
         display: flex;
@@ -146,11 +208,24 @@
         align-items: center;
         text-align: center;
     }
-    .header-top h3{
+
+    .header-top h3 {
         font-size: 35px;
         margin-bottom: 10px;
+        color: #FF900E;
+
+        /*    I wanted to use stroke into font , 
+        so i searched in google but  i havent found any options about how to use stroke effect into text.
+        Then i found text shadow and applied the style    */
+
+        text-shadow:
+   -1px -1px 0 rgb(126, 126, 126),  
+    1px -1px 0 rgb(126, 126, 126),
+    -1px 1px 0 rgb(126, 126, 126),
+     1px 1px 0 rgb(126, 126, 126);
     }
-    .nav-items{
+
+    .nav-items {
         flex-direction: column;
         gap: 10px;
         margin-bottom: 30px;
@@ -158,19 +233,57 @@
 
 
     /* banner style  */
-    .banner-title{
+    .banner-title {
         font-size: 54px;
         margin-bottom: 15px;
-    }
-    .banner-info{
-        padding: 0 10px;
-    }
-    .banner-button{
-        margin-bottom: 30px;
-    }
-    .banner-image img{
-        width: 100%;
-        
+        line-height: 100%;
     }
 
+    .banner-info {
+        padding: 0 10px;
+    }
+
+    .banner-button {
+        margin-bottom: 30px;
+    }
+
+    .banner-image {
+        padding: 0 15px;
+        margin-bottom: 20px;
+    }
+
+    .banner-image img {
+        width: 100%;
+    }
+
+
+
+    /*         Blog style            */
+
+    .blog-container{
+        flex-direction: column-reverse;
+        padding: 0;
+        gap: 30px;
+    }
+    .blog-info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 0 15px;
+    }
+
+    .blog-images{
+        grid-template-columns: repeat(2 , 1fr);
+        gap: 10px;
+        padding: 0 15px;
+
+    }
+    .blog-images img{
+        width: 100%;
+    }
+    .blog-button{
+        margin-bottom: 0;
+    }
 }

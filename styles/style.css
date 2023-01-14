@@ -22,6 +22,7 @@
 .header h3 {
     font-weight: 700;
     font-size: 45px;
+    color: #FF900E;
 }
 
 .nav-items {
@@ -82,7 +83,8 @@
 .banner-image {
     padding-bottom: 40px;
 }
-.banner-image img{
+
+.banner-image img {
     border: 0;
     border-radius: 15px;
 }
@@ -90,6 +92,9 @@
 
 
 /*---------------------------------------------------------------- Blog 1 styles --------------------------------------------- */
+.first-blog {
+    margin-bottom: 150px;
+}
 
 .blog-container {
     display: flex;
@@ -104,10 +109,11 @@
     display: grid;
     gap: 25px;
     grid-template-columns: repeat(2, 1fr);
-    
+
 
 }
-.blog-images img{
+
+.blog-images img {
     border: 0;
     border-radius: 11px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
@@ -138,6 +144,98 @@
 
 }
 
+
+
+/* -------------------------------------------------------Second Blog style -------------------------------------------- */
+
+.second-blog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 0 250px;
+}
+
+
+.left-top h2 {
+    font-weight: 700;
+    font-size: 45px;
+    margin-bottom: 25px;
+    border-left: 5px solid #FF900E;
+    padding-left: 25px;
+    padding-right: 126px;
+}
+
+.left-top p {
+    font-weight: 400;
+    font-size: 16px;
+    color: #727272;
+    margin-bottom: 30px;
+    line-height: 200%;
+}
+
+
+.bottom-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.box {
+    padding: 30px 20px 30px 30px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border: 0;
+    border-radius: 10px;
+}
+
+.box h3 {
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.box p {
+    font-weight: 400;
+    font-size: 16px;
+    color: #727272;
+    line-height: 200%;
+}
+
+.right-side img {
+    padding: 70px 0 90px 90px;
+}
+
+
+
+.big-button {
+    position: absolute;
+    left: 880px;
+    top: 3235px;
+}
+
+
+
+.big-button button {
+    background: #FF900E;
+    font-weight: 700;
+    font-size: 65px;
+    border: 0;
+    border-radius: 8px;
+    color: white;
+    text-align: center;
+    line-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 35px 45px 30px 45px;
+    margin-bottom: 170px;
+}
+
+.experience {
+    font-weight: 500;
+    font-size: 25px;
+}
 
 
 
@@ -213,16 +311,6 @@
         font-size: 35px;
         margin-bottom: 10px;
         color: #FF900E;
-
-        /*    I wanted to use stroke into font , 
-        so i searched in google but  i havent found any options about how to use stroke effect into text.
-        Then i found text shadow and applied the style    */
-
-        text-shadow:
-   -1px -1px 0 rgb(126, 126, 126),  
-    1px -1px 0 rgb(126, 126, 126),
-    -1px 1px 0 rgb(126, 126, 126),
-     1px 1px 0 rgb(126, 126, 126);
     }
 
     .nav-items {
@@ -258,14 +346,15 @@
 
 
 
-    /*         Blog style            */
+    /*         Blog 1 style            */
 
-    .blog-container{
+    .blog-container {
         flex-direction: column-reverse;
         padding: 0;
         gap: 30px;
     }
-    .blog-info{
+
+    .blog-info {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -274,16 +363,66 @@
         padding: 0 15px;
     }
 
-    .blog-images{
-        grid-template-columns: repeat(2 , 1fr);
+    .blog-images {
+        grid-template-columns: repeat(2, 1fr);
         gap: 10px;
         padding: 0 15px;
 
     }
-    .blog-images img{
+
+    .blog-images img {
         width: 100%;
     }
-    .blog-button{
+
+    .blog-button {
         margin-bottom: 0;
+    }
+
+    /*         Blog 2 style            */
+
+    .second-blog {
+        display: flex;
+        flex-direction: column;
+        padding: 0 15px;
+        margin: 0;
+        gap: 5px;
+    }
+
+    .bottom-container {
+        padding: 25px;
+    }
+
+    .right-side {
+        text-align: center;
+    }
+
+    .no-name {
+        padding: 0;
+        margin: 0;
+    }
+
+    .right-side img {
+        width: 90%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .big-button {
+
+        top: 3979px;
+        padding: 0;
+        margin: 0;
+        position: absolute;
+        left: 7px;
+
+    }
+
+    .big-button button {
+        padding: 15px;
+        font-size: 40px;
+    }
+
+    .experience {
+        font-size: 20px;
     }
 }

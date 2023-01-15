@@ -3,6 +3,11 @@
     padding: 0;
     font-family: 'Work Sans', sans-serif;
 }
+a{
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
 
 
 /* ----------------------------------------Heading styles -------------------------------*/
@@ -27,7 +32,22 @@
 
 .nav-items {
     display: flex;
-    gap: 40px;
+    gap: 35px;
+}
+.nav-items li{
+    padding: 10px;
+}
+
+.nav-items li:hover{
+    background-color: #FF900E;
+    color: white;
+    border: 0;
+    border-radius: 3px;
+
+   
+}
+.nav-items a:hover{
+    color: white;
 }
 
 .nav li {
@@ -78,6 +98,10 @@
     padding: 18px 25px;
     margin-bottom: 50px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.orange-button:hover{
+    background-color: #ed840d;
 }
 
 .banner-image {
@@ -241,7 +265,7 @@
 
 /* -----------------------------------------------------------------Some Facts style-----------------------------------------------  */
 
-.fact-details{
+.fact-details {
     text-align: center;
 }
 
@@ -269,16 +293,17 @@
     margin-bottom: 180px;
 }
 
-.fact-box{
+.fact-box {
     border-radius: 8px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-    transition:  0.3s linear;
+    transition: 0.3s linear;
 }
 
-.fact-box:hover{
+.fact-box:hover {
     transform: rotate(20deg);
     background-color: #fffaf5;
 }
+
 .fact-box-info {
     height: 240px;
     width: 240px;
@@ -312,14 +337,37 @@
 
 /*---------------------------------------------------------------Sponsors Style-------------------------------------------------------  */
 
+.sponsors {
+    margin-bottom: 130px;
+}
 
-.sponsor-logos{
+.sponsor-logos {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 155px;
-    margin-bottom: 130px;
     margin-top: 80px;
+}
+.sponsor-logos img:hover{
+    opacity: 75%;
+}
+
+/* -------------------------------------------------Footer styles ------------------------------------------ */
+
+.footer {
+    text-align: center;
+    margin-bottom: 220px;
+    background-color: #FFF4E7;
+    border: 0;
+    border-radius: 8px;
+    padding: 40px 400px;
+    margin: 180px 250px 150px 250px;
+
+}
+
+.footer p {
+    font-weight: 400;
+    color: #424242;
 }
 
 
@@ -338,43 +386,10 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* =========================================================================================================================================== */
 /* --------------------------------------------------------------------------MEdia query  -----------------------------------------------------*/
+/* =========================================================================================================================================== */
+
 
 /*                 mobile device                */
 
@@ -384,7 +399,7 @@
 
     /* header style  */
     .header-top {
-        padding: 30px 0 10px 20px;
+        padding: 30px 0 10px 0px;
         margin-bottom: 10px;
         display: flex;
         flex-direction: column;
@@ -499,7 +514,7 @@
 
     .big-button {
 
-        top: 3870px;
+        top: 3980px;
         padding: 0;
         margin: 0;
         position: absolute;
@@ -519,26 +534,62 @@
 
     /*           some facts            */
 
-    .some-facts{
+    .some-facts {
         margin: 0;
         padding: 0 15px;
     }
 
-    .fact-details{
+    .fact-details {
         margin-top: 100px;
-        
+
     }
-    .fact-details h3{
+
+    .fact-details h3 {
         margin-bottom: 10px;
     }
-    .fact-details p{
+
+    .fact-details p {
         margin-bottom: 40px;
     }
 
-    .facts-info{
+    .facts-info {
         margin: 0;
         padding: 0;
         flex-direction: column;
         gap: 30px;
+    }
+
+
+
+    /*            Sponsor style              */
+
+    .sponsors {
+        padding: 0 15px;
+        margin-bottom: 60px;
+    }
+
+    .sponsor-logos {
+        margin: 0; 
+        gap: 0px;
+    }
+
+    .sponsor-logos img {
+        width: 80%;
+        text-align: center;
+    }
+
+    
+    /*              Footer             */
+    footer{
+        margin: 0 20px 40px 15px;
+    }
+    .footer{
+        font-size: 14px;
+        padding: 15px 5px ;
+        margin: 0 ;
+        width: 100%;
+    }
+    .footer p{
+        padding: 0;
     }
 }
